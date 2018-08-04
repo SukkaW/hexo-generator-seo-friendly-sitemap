@@ -12,15 +12,24 @@
         <lastmod><%= item.updated.toISOString() || item.date.toISOString() %></lastmod>
         <changefreq>weekly</changefreq>
         <priority>1</priority>
-<% item.photos.forEach(function(photo){ %>
+    <% item.thumbnail.forEach(function(photo){ %>
         <image:image>
-<% if(photo.indexOf('http')<0) { %>
+    <% if(photo.indexOf('http')<0) { %>
             <image:loc><%- encodeURLAndEscape(data.urljoin(config.url, photo)) %></image:loc>
-<% } else { %>
+    <% } else { %>
             <image:loc><%- encodeURLAndEscape(url.resolve(config.url, photo)) %></image:loc>
-<% } %>
+    <% } %>
         </image:image>
-<% }) %>
+    <% }) %>
+    <% item.photos.forEach(function(photo){ %>
+        <image:image>
+    <% if(photo.indexOf('http')<0) { %>
+            <image:loc><%- encodeURLAndEscape(data.urljoin(config.url, photo)) %></image:loc>
+    <% } else { %>
+            <image:loc><%- encodeURLAndEscape(url.resolve(config.url, photo)) %></image:loc>
+    <% } %>
+        </image:image>
+    <% }) %>
     </url>
 <% }) %>
 </urlset>
