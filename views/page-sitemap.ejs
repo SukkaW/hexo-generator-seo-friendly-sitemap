@@ -11,7 +11,7 @@
         <loc><%- encodeURLAndEscape(page.permalink.replace('index.html', '')) %></loc>
         <lastmod><%= page.updated.toISOString() || page.date.toISOString() %></lastmod>
         <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
+        <priority>1</priority>
     </url>
     <% }) %>
 </urlset>
