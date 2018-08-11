@@ -1,14 +1,14 @@
 {
-  "name": "hexo-generator-seo-friendly-sitemap",
+  "name": "hexo-generator-better-sitemap",
   "description": "SEO-friendly sitemap generator plugin for Hexo",
-  "version": "0.0.22-pre",
+  "version": "0.1.0",
   "author": {
     "name": "Ludovic LEFEVRE",
     "email": "contact@ludoviclefevre.fr",
     "url": "http://www.ludoviclefevre.fr"
   },
   "bugs": {
-    "url": "http://github.com/ludoviclefevre/hexo-generator-seo-friendly-sitemap/issues"
+    "url": "http://github.com/SukkaW/hexo-generator-better-sitemap/issues"
   },
   "dependencies": {
     "bluebird": "^3.3.1",
@@ -52,7 +52,7 @@
     "README.md",
     "LICENSE"
   ],
-  "homepage": "https://github.com/ludoviclefevre/hexo-generator-seo-friendly-sitemap#readme",
+  "homepage": "https://github.com/SukkaW/hexo-generator-better-sitemap/#readme",
   "keywords": [
     "generator",
     "google",
@@ -64,10 +64,6 @@
   "main": "index",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ludoviclefevre/hexo-generator-seo-friendly-sitemap.git"
-  },
-  "scripts": {
-    "test": "grunt test",
-    "travis": "grunt travis"
+    "url": "https://github.com/SukkaW/hexo-generator-better-sitemap.git"
   }
 }
