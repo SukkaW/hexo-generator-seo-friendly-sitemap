@@ -5,14 +5,6 @@
     "extends": [
         "config:base"
     ],
-    "vulnerabilityAlerts": {
-        "labels": [
-            "security"
-        ],
-        "assignees": [
-            "SukkaW"
-        ]
-    },
     "reviewers": [
         "SukkaW"
     ],
