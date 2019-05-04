@@ -1,11 +1,11 @@
 {
     "name": "hexo-generator-better-sitemap",
     "description": "SEO-friendly sitemap generator plugin for Hexo",
-    "version": "0.1.1",
+    "version": "0.1.2",
     "author": {
-        "name": "Ludovic LEFEVRE",
-        "email": "contact@ludoviclefevre.fr",
-        "url": "http://www.ludoviclefevre.fr"
+        "name": "SukkaW",
+        "email": "i@skk.moe",
+        "url": "https://skk.moe"
     },
     "bugs": {
         "url": "http://github.com/SukkaW/hexo-generator-better-sitemap/issues"
@@ -16,7 +16,7 @@
         "lodash": "^4.5.0",
         "moment": "^2.22.2",
         "pretty-data": "0.40.0",
-        "url-join": "^1.1.0"
+        "url-join": "^4.0.0"
     },
     "devDependencies": {
         "chai": "3.4.1",
