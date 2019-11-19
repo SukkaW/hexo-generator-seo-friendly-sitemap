@@ -1,7 +1,7 @@
 {
     "name": "hexo-generator-better-sitemap",
     "description": "SEO-friendly sitemap generator plugin for Hexo",
-    "version": "0.1.2",
+    "version": "0.2.0",
     "author": {
         "name": "SukkaW",
         "email": "i@skk.moe",
@@ -19,7 +19,7 @@
         "url-join": "^4.0.1"
     },
     "engines": {
-        "node": ">=0.10"
+        "node": ">=10"
     },
     "files": [
         "index.js",
