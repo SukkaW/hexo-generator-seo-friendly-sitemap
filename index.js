@@ -1,9 +1,8 @@
-var _ = require('lodash'),
-  path = require('path'),
+const path = require('path');
 
-  config = hexo.config.sitemap = _.merge({
-    path: 'sitemap.xml'
-  }, hexo.config.sitemap);
+const config = hexo.config.sitemap = Object.assign({
+  path: 'sitemap.xml'
+}, hexo.config.sitemap);
 
 if (!path.extname(config.path)) {
   config.path += '.xml';
