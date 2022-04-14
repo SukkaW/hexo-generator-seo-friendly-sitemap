@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="sitemap.xsl"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<% include encodeURLAndEscape.ejs %>
-    <% include root-page.ejs %>
+<% include('encodeURLAndEscape.ejs') %>
+<% include('root-page.ejs') %>
 <% data.items.forEach(function(item){ %>
     <url>
         <loc><%- encodeURLAndEscape(data.urljoin(config.url, item.path)) %></loc>
         <lastmod><%= item.updated.toISOString() || item.date.toISOString() %></lastmod>
-        <changefreq>weekly</changefreq>
+        <changefreq>always</changefreq>
         <priority>1</priority>
     <% if (item.thumbnail) { %>
         <image:image>
@@ -29,4 +29,4 @@
     </url>
 <% }) %>
 </urlset>
-<% include meta %>
+<% include('meta') %>

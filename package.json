@@ -1,7 +1,7 @@
 {
     "name": "hexo-generator-better-sitemap",
     "description": "SEO-friendly sitemap generator plugin for Hexo",
-    "version": "0.2.2",
+    "version": "1.0.8",
     "author": {
         "name": "SukkaW",
         "email": "i@skk.moe",
@@ -11,15 +11,12 @@
         "url": "http://github.com/SukkaW/hexo-generator-better-sitemap/issues"
     },
     "dependencies": {
-        "bluebird": "^3.7.1",
-        "ejs": "^2.7.3",
-        "lodash": "^4.17.15",
+        "@sukka/ejs": "^3.1.7",
         "moment": "^2.24.0",
-        "pretty-data": "^0.40.0",
         "url-join": "^4.0.1"
     },
     "engines": {
-        "node": ">=10"
+        "node": ">=12"
     },
     "files": [
         "index.js",
